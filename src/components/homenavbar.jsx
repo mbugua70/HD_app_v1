@@ -19,7 +19,7 @@ const HomeNavBar = () => {
           transition={{ type: "spring" }}
           className=" topmenu centered_menu"
         >
-          {pathname === "/" ? "BAJAJ" : "registration"}
+          {pathname === "/" ? "HD EXPRESS" : "registration"}
         </motion.div>
         <div className=" topmenu rigt_menu">
           <Link href="index.html">

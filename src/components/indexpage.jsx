@@ -34,10 +34,10 @@ const IndexPage = () => {
           >
             <p>
               <NavLink
-                to="express"
-                className="waves-effect block waves-light black btn-large w80"
+                to="fitment"
+                className="waves-effect block waves-light blue btn-large w80"
               >
-                HD EXPRESS SERVICE
+                SERVICE INFORMATION
               </NavLink>
             </p>
           </motion.div>
@@ -51,15 +51,14 @@ const IndexPage = () => {
           >
             <p>
               <NavLink
-                to="on_go"
-                className="waves-effect block waves-light orange  btn-large w80"
+                to="retail"
+                className="waves-effect block waves-light black  btn-large w80"
                 style={{ textAlign: "center" }}
               >
-                HD ON THE GO
+                SUMMARY
               </NavLink>
             </p>
           </motion.div>
-
           <motion.div
             variants={{
               hidden: { opacity: 0, scale: 0.5 },
@@ -78,6 +77,7 @@ const IndexPage = () => {
               </NavLink>
             </p>
           </motion.div>
+
         </motion.div>
       </div>
       {/* <Outlet /> */}

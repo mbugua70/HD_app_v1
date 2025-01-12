@@ -15,11 +15,9 @@ import { loader as survyLoader } from "./surveylayout";
 import { requireAuth } from "./utilis";
 import EditEvent from "./EditEvent";
 import RidesLayout from "./rideslayout";
-import FleetLayout from "./fleetlayout";
 import DayLayout from "./daylayout"
-import SummaryLayout from "./summarylayout"
-import IndexPageChildOne from "./Indexpage_child_one"
-import IndexPageChildTwo from "./Indexpage_child_two"
+
+
 
 
 export const router = createBrowserRouter(
@@ -27,8 +25,6 @@ export const router = createBrowserRouter(
     <Route>
       <Route path="/" element={<IndexPage />} />
       <Route path="/" element={<Layout />}>
-      <Route path="/express" element={<IndexPageChildOne/>}/>
-      <Route path="/on_go" element={<IndexPageChildTwo/>}/>
         <Route
           path="/registration"
           element={<RegistrationPage />}
@@ -36,9 +32,9 @@ export const router = createBrowserRouter(
           action={loadingAction}
         />
 
-        <Route path="/express/fitment" element={<SurveyLayout />} loader={survyLoader}>
+        <Route path="/fitment" element={<SurveyLayout />} loader={survyLoader}>
           <Route
-            path="/express/fitment"
+            path="/fitment"
             element={<DayLayout />}
             loader={async ({ request }) => {
               return await requireAuth(request);
@@ -46,7 +42,7 @@ export const router = createBrowserRouter(
           >
 
             <Route
-              path="/express/fitment/edit"
+              path="/fitment/edit"
               element={<EditEvent />}
               loader={async ({ request }) => {
                 return await requireAuth(request);
@@ -54,58 +50,21 @@ export const router = createBrowserRouter(
             />
           </Route>
         </Route>
-        <Route path="/express/retail" element={<SurveyLayout />} loader={survyLoader}>
+        <Route path="/retail" element={<SurveyLayout />} loader={survyLoader}>
           <Route
-            path="/express/retail"
+            path="/retail"
             element={<RidesLayout />}
             loader={async ({ request }) => {
               return await requireAuth(request);
             }}
           >
             <Route
-              path="/express/retail/edit"
+              path="/retail/edit"
               element={<EditEvent />}
               loader={async ({ request }) => {
                 return await requireAuth(request);
               }}
             />
-          </Route>
-        </Route>
-
-        <Route path="/on_go/summary" element={<SummaryLayout/>} loader={survyLoader}>
-        <Route
-              path="/on_go/summary"
-              element={<SummaryLayout />}
-              loader={async ({ request }) => {
-                return await requireAuth(request);
-              }}
-            />
-
-            <Route
-              path="/on_go/summary/edit"
-              element={<EditEvent />}
-              loader={async ({ request }) => {
-                return await requireAuth(request);
-              }}
-            />
-        </Route>
-
-        <Route path="/on_go/wholesale" element={<SurveyLayout />} loader={survyLoader}>
-          <Route
-            path="/on_go/wholesale"
-            element={<FleetLayout />}
-            loader={async ({ request }) => {
-              return await requireAuth(request);
-            }}
-          >
-            <Route
-              path="/on_go/wholesale/edit"
-              element={<EditEvent />}
-              loader={async ({ request }) => {
-                return await requireAuth(request);
-              }}
-            />
-
           </Route>
         </Route>
       </Route>
