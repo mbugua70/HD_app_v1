@@ -112,6 +112,54 @@ export async function fleetForm(test) {
 
 }
 
+
+export async function ongoSummaryForm(test) {
+  const storeOne = localStorage.getItem("Auth");
+  const storeTwo = JSON.parse(storeOne);
+
+  const nameEl = storeTwo.ba_name;
+  const PhoneEl = storeTwo.ba_phone;
+  const locationsEl = storeTwo.ba_region;
+
+  const data_one = { ...test };
+
+  const formData = new FormData();
+
+  for (const key in data_one) {
+    if (data_one.hasOwnProperty(key)) {
+      formData.append(key, data_one[key]);
+    }
+  }
+
+      formData.append("place", "HD_ON_GO");
+      formData.append("ba_name", nameEl);
+      formData.append("ba_phone", PhoneEl);
+      formData.append("ba_region", locationsEl);
+
+
+
+  const res = await fetch("https://brandyolk.iguru.co.ke/process/BM.php", {
+
+    method: "POST",
+    body: formData,
+  });
+
+  // const data = await res.json();
+  if (res.ok) {
+    const data = await res.text(); // Read the response as plain text
+    console.log("HTML Response:", data);
+    return data
+
+  }else{
+    throw {
+      message: data.msg,
+      statusText: res.statusText,
+      status: res.status,
+    };
+  }
+
+}
+
 export async function summaryForm(test) {
   const storeOne = localStorage.getItem("Auth");
   const storeTwo = JSON.parse(storeOne);

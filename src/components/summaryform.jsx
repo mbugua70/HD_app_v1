@@ -1,14 +1,15 @@
 /* eslint-disable react-refresh/only-export-components */
 import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
-import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
 import { ToastContainer, toast, Slide } from "react-toastify";
-import { testridesForm } from "./api";
+import { ongoSummaryForm } from "./api";
 import { OfflineContext } from "../contextApi/offline_context";
 import { FormContext } from "../contextApi/selectelement_context";
-import useOnlineStatus from "../custom_hook/useOffline";
 import { motion, AnimatePresence } from "framer-motion";
+
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+import useOnlineStatus from "../custom_hook/useOffline";
 
 const SummaryForm = () => {
   const [isQuestion, setisQuestion] = useState(false);
@@ -27,6 +28,13 @@ const SummaryForm = () => {
       sub_1_8: "",
       sub_1_10: "",
       sub_1_11: "",
+      sub_1_12: "",
+      sub_1_13: "",
+      sub_1_14: "",
+      sub_1_15: "",
+      sub_1_16: "",
+      sub_1_17: "",
+      sub_1_18: "",
     },
   });
 
@@ -56,7 +64,7 @@ const SummaryForm = () => {
           transition: Slide,
         });
       } else {
-        const response = await testridesForm(data);
+        const response = await ongoSummaryForm(data);
         if (response) {
           const MySwal = withReactContent(Swal);
           MySwal.fire({
@@ -156,7 +164,6 @@ const SummaryForm = () => {
 
             </div>
 
-
             <div className="input-field col s12">
               <span>6. TOTAL GIVE AWAYS</span>
               <br />
@@ -169,12 +176,6 @@ const SummaryForm = () => {
               <br />
               <input id="sub_1_8" name="sub_1_8" placeholder=" Give Aways Issued " type="text" {...register("sub_1_8")}/>
             </div>
-
-            {/* <div className="input-field col s12">
-              <span>8. BIKE TO BE SERVICED BY ALL MECHANIC/DAY</span>
-              <br />
-              <input id="sub_1_8" name="sub_1_8" placeholder="BIKE TO BE SERVICED BY ALL MECHANIC/DAY" type="text" {...register("sub_1_8")}/>
-            </div> */}
 
             <div className="input-field col s12">
               <span>8. Number of Riders Serviced</span>
