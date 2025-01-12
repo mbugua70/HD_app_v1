@@ -40,7 +40,7 @@ export async function testridesForm(test) {
     }
   }
 
-      formData.append("place", "RETAIL_STOCK");
+      formData.append("place", "EXPRESS_SUMMARY");
       formData.append("ba_name", nameEl);
       formData.append("ba_phone", PhoneEl);
       formData.append("ba_region", locationsEl);
@@ -83,7 +83,7 @@ export async function fleetForm(test) {
     }
   }
 
-      formData.append("place", "WHOLESALE_STOCK");
+      formData.append("place", "HD_ON_GO");
       formData.append("ba_name", nameEl);
       formData.append("ba_phone", PhoneEl);
       formData.append("ba_region", locationsEl);
@@ -130,7 +130,7 @@ export async function summaryForm(test) {
     }
   }
 
-  formData.append("place", "FORM_FITMENT");
+  formData.append("place", "SERVICE_INFORMATION");
   formData.append("ba_name", nameEl);
   formData.append("ba_phone", PhoneEl);
   formData.append("ba_region", locationsEl);

@@ -27,6 +27,12 @@ const SurveyForm = () => {
       sub_1_8: "",
       sub_1_10: "",
       sub_1_11: "",
+      sub_1_12: "",
+      sub_1_13: "",
+      sub_1_14: "",
+      sub_1_15: "",
+      sub_1_16: "",
+      sub_1_17: "",
     },
   });
 
@@ -116,79 +122,121 @@ const SurveyForm = () => {
             method="post"
             onSubmit={handleSubmit(onSubmit)}
           >
-            <h1>Questionnaire</h1>
+            <h1>Data for Analysis and Summary</h1>
 
             <div className="input-field col s12">
-              <span>1. Promoter Name</span>
+              <span>1. Date</span>
               <br />
-              <input id="sub_1_1" name="sub_1_1" placeholder="Promoter Name" type="text"  {...register("sub_1_1")}/>
+              <input id="sub_1_1" name="sub_1_1" placeholder="Date" type="date"  {...register("sub_1_1")}/>
             </div>
 
             <div className="input-field col s12">
-              <span>2. Date</span>
+              <span>2. Location</span>
               <br />
-              <input id="sub_1_2" name="sub_1_2" placeholder="Date" type="date" {...register("sub_1_2")}/>
+              <input id="sub_1_2" name="sub_1_2" placeholder="location" type="text" {...register("sub_1_2")}/>
             </div>
 
             <div className="input-field col s12">
-              <span>3. Customer Name</span>
+              <span>3. TOTAL DAYS</span>
               <br />
-              <input id="sub_1_3" name="sub_1_3" placeholder="Enter Name" type="text" {...register("sub_1_3")}/>
+              <input id="sub_1_3" name="sub_1_3" placeholder="TOTAL DAYS" type="text" {...register("sub_1_3")}/>
             </div>
 
             <div className="input-field col s12">
-              <span>4. Phone Number</span>
+              <span>4. SERVICE TARGET</span>
               <br/>
-              <input id="sub_1_4" name="sub_1_4" placeholder="Phone Number" type="tel" {...register("sub_1_4")}/>
+              <input id="sub_1_4" name="sub_1_4" placeholder="SERVICE TARGET" type="text" {...register("sub_1_4")}/>
             </div>
 
             <div className="input-field col s12">
-              <span>5. Registartion Number</span>
+              <span>5. Service Done</span>
               <br />
-              <input id="sub_1_5" name="sub_1_5" placeholder="Registartion Number" type="text"  {...register("sub_1_5")}/>
+              <input id="sub_1_5" name="sub_1_5" placeholder="Service Done" type="text"  {...register("sub_1_5")}/>
 
             </div>
 
 
             <div className="input-field col s12">
-              <span>6. District</span>
+              <span>6. TOTAL GIVE AWAYS</span>
               <br />
-              <input id="sub_1_6" name="sub_1_6" placeholder="District" type="text" {...register("sub_1_6")}/>
+              <input id="sub_1_6" name="sub_1_6" placeholder="TOTAL GIVE AWAYS" type="text" {...register("sub_1_6")}/>
             </div>
 
 
             <div className="input-field col s12">
-              <span>7. Location</span>
+              <span>7.  Give Aways Issued </span>
               <br />
-              <input id="sub_1_7" name="sub_1_7" placeholder="Location" type="text" {...register("sub_1_7")}/>
+              <input id="sub_1_7" name="sub_1_7" placeholder=" Give Aways Issued " type="text" {...register("sub_1_7")}/>
             </div>
 
             <div className="input-field col s12">
-              <span>8. Near BY Landmark</span>
+              <span>8. BIKE TO BE SERVICED BY ALL MECHANIC/DAY</span>
               <br />
-              <input id="sub_1_8" name="sub_1_8" placeholder="E.g Mosque" type="text" {...register("sub_1_8")}/>
+              <input id="sub_1_8" name="sub_1_8" placeholder="BIKE TO BE SERVICED BY ALL MECHANIC/DAY" type="text" {...register("sub_1_8")}/>
             </div>
 
-            <h2>STOCK PURCHASED</h2>
-
             <div className="input-field col s12">
-              <span>1. 1L</span>
+              <span>9. Total Riders Served</span>
               <br />
-              <input id="sub_1_9" name="sub_1_9" placeholder="Enter 1L stock purchased" type="text"  {...register("sub_1_9")}/>
+              <input id="sub_1_9" name="sub_1_9" placeholder="Total Riders Served" type="text"  {...register("sub_1_9")}/>
             </div>
 
             <div className="input-field col s12">
-              <span>2. 0.5L</span>
+              <span>10. Total Repairs Conducted</span>
               <br />
-              <input id="sub_1_10" name="sub_1_10" placeholder="Enter 0.5L stock purchased" type="text" {...register("sub_1_10")}/>
+              <input id="sub_1_10" name="sub_1_10" placeholder="Total Repairs Conducted" type="text" {...register("sub_1_10")}/>
             </div>
 
-            <h2>G BOOSTY ENERGY</h2>
-
             <div className="input-field col s12">
-              <span>1. Apple</span>
+              <span>11. Total Spare Parts Sold</span>
               <br />
               <input id="sub_1_11" name="sub_1_11" placeholder="Enter your answer" type="text" {...register("sub_1_11")}/>
+            </div>
+            <div className="input-field col s12">
+              <span>12. Total Amount</span>
+              <br />
+              <input id="sub_1_12" name="sub_1_12" placeholder="Warranty Activated" type="text" {...register("sub_1_12")}/>
+            </div>
+
+
+            <div className="input-field col s12">
+              <span>13. Warranty Activated</span>
+              <br />
+              <input id="sub_1_13" name="sub_1_13" placeholder="Warranty Activated" type="text" {...register("sub_1_13")}/>
+            </div>
+
+            <h1>Engagement Activities </h1>
+
+            <div className="input-field col s12">
+              <span>1. Demo</span>
+              <br />
+              <input id="sub_1_14" name="sub_1_14" placeholder="Demo" type="text" {...register("sub_1_14")}/>
+            </div>
+            <div className="input-field col s12">
+              <span>2. Q&A</span>
+              <br />
+              <input id="sub_1_15" name="sub_1_15" placeholder="Q&A" type="text" {...register("sub_1_15")}/>
+            </div>
+
+            <div className="input-field col s12">
+              <span>3. Rider’s Perception of Brand Visibility </span>
+              <br />
+              <select className="select_els" name="sub_1_16" id="sub_1_16"  style={{ display: "block" }}  {...register("sub_1_16")}>
+            <option value="">Select your answer</option>
+            <option id="" value="High">High</option>
+            <option id="" value="Moderate">Moderate</option>
+            <option id="" value="Low">Low</option>
+            </select>
+            </div>
+
+            <div className="input-field col s12">
+              <span>4. Rider’s Willingness to Recommend </span>
+              <br />
+              <select className="select_els" name="sub_1_17" id="sub_1_17"  style={{ display: "block" }}  {...register("sub_1_17")}>
+            <option value="">Select your answer</option>
+            <option id="" value="Yes">YES</option>
+            <option id="" value="No">NO</option>
+            </select>
             </div>
 
             <div className="input-field col s12 center_it">

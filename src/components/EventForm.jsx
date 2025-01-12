@@ -73,6 +73,7 @@ export default function EventForm({ inputData, onSubmit, children }) {
         type="text"
         name="ba_name"
         id="ba_name"
+        className="edit_input"
         placeholder="Enter name"
         defaultValue={inputData?.ba_name ?? ""}
       />
@@ -82,6 +83,7 @@ export default function EventForm({ inputData, onSubmit, children }) {
         type="tel"
         name="ba_phone"
         id="ba_phone"
+        className="edit_input"
         placeholder="Tel e.g 0728**"
         defaultValue={inputData?.ba_phone ?? ""}
       />
@@ -91,6 +93,7 @@ export default function EventForm({ inputData, onSubmit, children }) {
         type="text"
         name="ba_region"
         id="ba_region"
+        className="edit_input"
         placeholder="Enter location"
         defaultValue={inputData?.ba_region ?? ""}
       />

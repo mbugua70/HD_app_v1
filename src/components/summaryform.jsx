@@ -110,85 +110,135 @@ const SummaryForm = () => {
     <>
       <div className="main_body">
         <div className="row parcel_form">
-          <form
+        <form
             className="form"
             id="form"
             method="post"
             onSubmit={handleSubmit(onSubmit)}
           >
-            <h1>Questionnaire</h1>
+            <h1>General Information</h1>
 
             <div className="input-field col s12">
-              <span>1. Promoter Name</span>
+              <span>1. Date</span>
               <br />
-              <input id="sub_1_1" name="sub_1_1" placeholder="Promoter Name" type="text"  {...register("sub_1_1")}/>
+              <input id="sub_1_1" name="sub_1_1" placeholder="Date" type="date"  {...register("sub_1_1")}/>
             </div>
 
             <div className="input-field col s12">
-              <span>2. Date</span>
+              <span>2. Region</span>
               <br />
-              <input id="sub_1_2" name="sub_1_2" placeholder="Date" type="date" {...register("sub_1_2")}/>
+              <input id="sub_1_2" name="sub_1_2" placeholder="Region" type="text" {...register("sub_1_2")}/>
             </div>
 
             <div className="input-field col s12">
-              <span>3. Customer Name</span>
+              <span>3. TOTAL DAYS</span>
               <br />
-              <input id="sub_1_3" name="sub_1_3" placeholder="Enter Name" type="text" {...register("sub_1_3")}/>
+              <input id="sub_1_3" name="sub_1_3" placeholder="TOTAL DAYS" type="text" {...register("sub_1_3")}/>
             </div>
 
             <div className="input-field col s12">
-              <span>4. Phone Number</span>
+              <span>4. SERVICE TARGET</span>
               <br/>
-              <input id="sub_1_4" name="sub_1_4" placeholder="Phone Number" type="tel" {...register("sub_1_4")}/>
+              <input id="sub_1_4" name="sub_1_4" placeholder="SERVICE TARGET" type="text" {...register("sub_1_4")}/>
             </div>
 
             <div className="input-field col s12">
-              <span>5. Registartion Number</span>
+              <span>5. Service Done</span>
               <br />
-              <input id="sub_1_5" name="sub_1_5" placeholder="Registartion Number" type="text"  {...register("sub_1_5")}/>
+              <input id="sub_1_5" name="sub_1_5" placeholder="Service Done" type="text"  {...register("sub_1_5")}/>
+
+            </div>
+
+            <div className="input-field col s12">
+              <span>6. Total Parks / Location Visited</span>
+              <br />
+              <input id="sub_1_6" name="sub_1_6" placeholder="Total Parks / Location Visited" type="text"  {...register("sub_1_6")}/>
 
             </div>
 
 
             <div className="input-field col s12">
-              <span>6. District</span>
+              <span>6. TOTAL GIVE AWAYS</span>
               <br />
-              <input id="sub_1_6" name="sub_1_6" placeholder="District" type="text" {...register("sub_1_6")}/>
+              <input id="sub_1_7" name="sub_1_7" placeholder="TOTAL GIVE AWAYS" type="text" {...register("sub_1_7")}/>
             </div>
 
 
             <div className="input-field col s12">
-              <span>7. Location</span>
+              <span>7.  Give Aways Issued </span>
               <br />
-              <input id="sub_1_7" name="sub_1_7" placeholder="Location" type="text" {...register("sub_1_7")}/>
+              <input id="sub_1_8" name="sub_1_8" placeholder=" Give Aways Issued " type="text" {...register("sub_1_8")}/>
+            </div>
+
+            {/* <div className="input-field col s12">
+              <span>8. BIKE TO BE SERVICED BY ALL MECHANIC/DAY</span>
+              <br />
+              <input id="sub_1_8" name="sub_1_8" placeholder="BIKE TO BE SERVICED BY ALL MECHANIC/DAY" type="text" {...register("sub_1_8")}/>
+            </div> */}
+
+            <div className="input-field col s12">
+              <span>8. Number of Riders Serviced</span>
+              <br />
+              <input id="sub_1_9" name="sub_1_9" placeholder="Number of Riders Serviced" type="text"  {...register("sub_1_9")}/>
             </div>
 
             <div className="input-field col s12">
-              <span>8. Near BY Landmark</span>
+              <span>9. Number of Emergency Calls Responded To</span>
               <br />
-              <input id="sub_1_8" name="sub_1_8" placeholder="E.g Mosque" type="text" {...register("sub_1_8")}/>
-            </div>
-
-            <h2>STOCK PURCHASED</h2>
-
-            <div className="input-field col s12">
-              <span>1. 1L</span>
-              <br />
-              <input id="sub_1_9" name="sub_1_9" placeholder="Enter 1L stock purchased" type="text"  {...register("sub_1_9")}/>
+              <input id="sub_1_10" name="sub_1_10" placeholder="Number of Emergency Calls Responded To" type="text" {...register("sub_1_10")}/>
             </div>
 
             <div className="input-field col s12">
-              <span>2. 0.5L</span>
+              <span>10. Toll-Free Call Center Queries Logged</span>
               <br />
-              <input id="sub_1_10" name="sub_1_10" placeholder="Enter 0.5L stock purchased" type="text" {...register("sub_1_10")}/>
+              <input id="sub_1_11" name="sub_1_11" placeholder="Toll-Free Call Center Queries Logged" type="text" {...register("sub_1_11")}/>
             </div>
 
-            <h2>G BOOSTY ENERGY</h2>
+            <h1>Awareness Metrics</h1>
+            <div className="input-field col s12">
+              <span>1. Number of Flyers Distributed</span>
+              <br />
+              <input id="sub_1_12" name="sub_1_12" placeholder="Number of Flyers Distributed" type="text" {...register("sub_1_12")}/>
+            </div>
+
 
             <div className="input-field col s12">
-              <span>1. Apple</span>
+              <span>2. Estimated Rider Attendance</span>
               <br />
-              <input id="sub_1_11" name="sub_1_11" placeholder="Enter your answer" type="text" {...register("sub_1_11")}/>
+              <input id="sub_1_13" name="sub_1_13" placeholder="Estimated Rider Attendance" type="text" {...register("sub_1_13")}/>
+            </div>
+
+            <h1>Brand Education</h1>
+
+            <div className="input-field col s12">
+              <span>1. Riders Educated on Maintenance Schedule</span>
+              <br />
+              <input id="sub_1_14" name="sub_1_14" placeholder="Riders Educated on Maintenance Schedule" type="text" {...register("sub_1_14")}/>
+            </div>
+            <div className="input-field col s12">
+              <span>2. Number of Riders Engaged for Bike Care Education</span>
+              <br />
+              <input id="sub_1_15" name="sub_1_15" placeholder="Number of Riders Engaged for Bike Care Education" type="text" {...register("sub_1_15")}/>
+            </div>
+
+            <h1>Products Sold</h1>
+
+            <div className="input-field col s12">
+              <span>1. Total Spare Parts Sold</span>
+              <br />
+              <input id="sub_1_16" name="sub_1_16" placeholder="Total Spare Parts Sold" type="text" {...register("sub_1_16")}/>
+            </div>
+
+            <div className="input-field col s12">
+              <span>2. Total Amount</span>
+              <br />
+              <input id="sub_1_17" name="sub_1_17" placeholder="TZS" type="text" {...register("sub_1_17")}/>
+            </div>
+
+            <div className="input-field col s12">
+              <span>3. Warranty Activated</span>
+              <br />
+              <input id="sub_1_18" name="sub_1_18" placeholder="Warranty Activated" type="text" {...register("sub_1_18")}/>
             </div>
 
             <div className="input-field col s12 center_it">

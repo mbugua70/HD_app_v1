@@ -27,6 +27,49 @@ const DaySummaryForm = () => {
       sub_1_13: "",
       sub_1_14: "",
       sub_1_15: "",
+      sub_1_16: "",
+      sub_1_17: "",
+      sub_1_18: "",
+      sub_1_19: "",
+      sub_1_20: "",
+      sub_1_21: "",
+      sub_1_22: "",
+      sub_1_23: "",
+      sub_1_24: "",
+      sub_1_25: "",
+      sub_1_26: "",
+      sub_1_27: "",
+      sub_1_28: "",
+      sub_1_29: "",
+      sub_1_30: "",
+      sub_1_31: "",
+      sub_1_32: "",
+      sub_1_33: "",
+      sub_1_34: "",
+      sub_1_35: "",
+      sub_1_36: "",
+      sub_1_37: "",
+      sub_1_38: "",
+      sub_1_39: "",
+      sub_1_40: "",
+      sub_1_41: "",
+      sub_1_42: "",
+      sub_1_43: "",
+      sub_1_44: "",
+      sub_1_45: "",
+      sub_1_46: "",
+      sub_1_47: "",
+      sub_1_48: "",
+      sub_1_49: "",
+      sub_1_50: "",
+      sub_1_51: "",
+      sub_1_52: "",
+      sub_1_53: "",
+      sub_1_54: "",
+      sub_1_55: "",
+      sub_1_56: "",
+      sub_1_57: "",
+      sub_1_58: "",
     },
   });
 
@@ -378,6 +421,190 @@ const DaySummaryForm = () => {
               <span>3. Chasis Number</span>
               <br />
               <input id="sub_1_35" name="sub_1_35" placeholder="Chasis Number" type="text"  {...register("sub_1_35")}/>
+            </div>
+
+            <div className="input-field col s12">
+              <span>4. Engine Number</span>
+              <br />
+              <input id="sub_1_36" name="sub_1_36" placeholder="Engine No" type="text"  {...register("sub_1_36")}/>
+            </div>
+
+            <div className="input-field col s12">
+              <span>5. Next Service Due Date </span>
+              <br />
+              <input id="sub_1_37" name="sub_1_37" placeholder="Next Service Due Date" type="date"  {...register("sub_1_37")}/>
+            </div>
+
+            <h1>Spare Parts Information</h1>
+            <div className="input-field col s12">
+              <span>1. Parts Sold (SKU/Part Name)</span>
+              <br />
+              <input id="sub_1_38" name="sub_1_38" placeholder="Parts sold /Parn name" type="text"  {...register("sub_1_38")}/>
+            </div>
+
+            <div className="input-field col s12">
+              <span>2. Quantity Sold</span>
+              <br />
+              <input id="sub_1_39" name="sub_1_39" placeholder="Quantity Sold" type="text"  {...register("sub_1_39")}/>
+            </div>
+
+            <div className="input-field col s12">
+              <span>3. Price (TZS.)</span>
+              <br />
+              <input id="sub_1_40" name="sub_1_40" placeholder="TZS.." type="text"  {...register("sub_1_40")}/>
+            </div>
+
+            <div className="input-field col s12">
+              <span>4. F.O. Name</span>
+              <br />
+              <input id="sub_1_41" name="sub_1_41" placeholder="F.O. Name" type="text"  {...register("sub_1_41")}/>
+            </div>
+
+            <div className="input-field col s12">
+              <span>5. Date of Sale</span>
+              <br />
+              <input id="sub_1_42" name="sub_1_42" placeholder="Date of Sale" type="date"  {...register("sub_1_42")}/>
+            </div>
+
+            <div className="input-field col s12">
+              <span>6. Spare Part Availability Feedback</span>
+              <br />
+              <select className="select_els" name="sub_1_43" id="sub_1_43"  style={{ display: "block" }}  {...register("sub_1_43")}>
+            <option value="">Select your answer</option>
+            <option id="" value="High">High</option>
+            <option id="" value="Moderate">Moderate</option>
+            <option id="" value="low">Low</option>
+            </select>
+            </div>
+
+            <div className="input-field col s12">
+              <span>7. Affordability Feedback</span>
+              <br />
+              <select className="select_els" name="sub_1_44" id="sub_1_44"  style={{ display: "block" }}  {...register("sub_1_44")}>
+            <option value="">Select your answer</option>
+            <option id="" value="Affordable">Affordable</option>
+            <option id="" value="Expensive">Expensive</option>
+            </select>
+            </div>
+
+            <h1>Warranty Activation and Repairs</h1>
+            <div className="input-field col s12">
+              <span>1. Warranty Activation</span>
+              <br />
+              <select className="select_els" name="sub_1_45" id="sub_1_45"  style={{ display: "block" }}  {...register("sub_1_45")}>
+            <option value="">Select your answer</option>
+            <option id="" value="yes">Yes</option>
+            <option id="" value="no">No</option>
+            </select>
+            </div>
+
+            <div className="input-field col s12">
+              <span>2. Date of Warranty Activation</span>
+              <br />
+              <input id="sub_1_46" name="sub_1_46" placeholder="Date of Warranty Activation" type="text"  {...register("sub_1_46")}/>
+            </div>
+
+            <div className="input-field col s12">
+              <span>3. Type of Warranty Repair (if applicable)</span>
+              <br />
+              <input id="sub_1_47" name="sub_1_47" placeholder="Type of warranty repair" type="text"  {...register("sub_1_47")}/>
+            </div>
+
+            <div className="input-field col s12">
+              <span>4. Cost (if any)</span>
+              <br />
+              <input id="sub_1_48" name="sub_1_48" placeholder="TZS" type="text"  {...register("sub_1_48")}/>
+            </div>
+
+            <h1>Education and Awareness</h1>
+            <div className="input-field col s12">
+              <span>1. Education on Warranty Provided</span>
+              <br />
+              <select className="select_els" name="sub_1_49" id="sub_1_49"  style={{ display: "block" }}  {...register("sub_1_49")}>
+            <option value="">Select your answer</option>
+            <option id="" value="yes">Yes</option>
+            <option id="" value="no">No</option>
+            </select>
+            </div>
+
+
+            <div className="input-field col s12">
+              <span>2. Rider’s Knowledge Level Post-Education </span>
+              <br />
+              <select className="select_els" name="sub_1_50" id="sub_1_50"  style={{ display: "block" }}  {...register("sub_1_50")}>
+            <option value="">Select your answer</option>
+            <option id="" value="Excellent">Excellent</option>
+            <option id="" value="Good">Good</option>
+            <option id="" value="Fair">Fair</option>
+            <option id="" value="Poor">Poor</option>
+            </select>
+            </div>
+
+            <h1>Rider Feedback on Service</h1>
+            <div className="input-field col s12">
+              <span>1. Service Satisfaction Rating</span>
+              <br />
+              <select className="select_els" name="sub_1_51" id="sub_1_51"  style={{ display: "block" }}  {...register("sub_1_51")}>
+            <option value="">Select your answer</option>
+            <option id="" value="1">1</option>
+            <option id="" value="2">2</option>
+            <option id="" value="3">3</option>
+            <option id="" value="4">4</option>
+            <option id="" value="5">5</option>
+            </select>
+            </div>
+
+            <div className="input-field col s12">
+              <span>2. Comments/Concerns</span>
+              <br />
+              <input id="sub_1_52" name="sub_1_52" placeholder="Comments" type="text"  {...register("sub_1_52")}/>
+            </div>
+
+            <div className="input-field col s12">
+              <span>3. Suggestions for Improvement</span>
+              <br />
+              <input id="sub_1_53" name="sub_1_53" placeholder="Suggestions for Improvement" type="text"  {...register("sub_1_53")}/>
+            </div>
+
+            <h1>Stakeholder Engagement & Brand Visibility</h1>
+            <div className="input-field col s12">
+              <span>1. Engagement Activities</span>
+              <br />
+              <input id="sub_1_54" name="sub_1_54" placeholder="Demo, Q&A, etc." type="text"  {...register("sub_1_54")}/>
+            </div>
+
+            <div className="input-field col s12">
+              <span>2. Rider’s Perception of Brand Visibility</span>
+              <br />
+              <select className="select_els" name="sub_1_55" id="sub_1_55"  style={{ display: "block" }}  {...register("sub_1_55")}>
+            <option value="">Select your answer</option>
+            <option id="" value="High">High</option>
+            <option id="" value="Moderate">Moderate</option>
+            <option id="" value="Low">Low</option>
+
+            </select>
+            </div>
+
+            <div className="input-field col s12">
+              <span>3. Rider’s Willingness to Recommend</span>
+              <br />
+              <select className="select_els" name="sub_1_56" id="sub_1_56"  style={{ display: "block" }}  {...register("sub_1_56")}>
+            <option value="">Select your answer</option>
+            <option id="" value="Yes">Yes</option>
+            <option id="" value="No">No</option>
+            </select>
+            </div>
+
+            <div className="input-field col s12">
+              <span>4. Additional Observations</span>
+              <br />
+              <input id="sub_1_57" name="sub_1_57" placeholder="Additional Observations" type="text"  {...register("sub_1_57")}/>
+            </div>
+
+            <div className="input-field col s12">
+              <span>5. Key Insights</span>
+              <br />
+              <input id="sub_1_58" name="sub_1_58" placeholder="Key Insights" type="text"  {...register("sub_1_58")}/>
             </div>
 
             <div className="input-field col s12 center_it">
