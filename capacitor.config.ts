@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'co.ke.byz.bajaz',
-  appName: 'bytz',
+  appId: 'co.ke.hdepxress.express',
+  appName: 'hdexpress',
   webDir: 'dist'
 };
 
