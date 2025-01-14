@@ -45,14 +45,14 @@ export async function testridesForm(test) {
       formData.append("ba_phone", PhoneEl);
       formData.append("ba_region", locationsEl);
 
-  const res = await fetch("https://brandyolk.iguru.co.ke/process/BM.php", {
+  const res = await fetch("https://iguru.co.ke/skope_api/BM.php", {
     method: "POST",
     body: formData,
   });
 
-  const data = await res.json();
+
   if (res.ok) {
-    const data = await res.text(); // Read the response as plain text
+    const data = await res.text();
     console.log("HTML Response:", data);
     return data
   }else{
@@ -91,7 +91,7 @@ export async function summaryForm(test) {
 
   console.log(formData.get("sub_1_4"));
 
-  const res = await fetch("https://brandyolk.iguru.co.ke/process/BM.php", {
+  const res = await fetch("https://iguru.co.ke/skope_api/BM.php", {
     method: "POST",
     body: formData,
 

@@ -242,7 +242,7 @@ const DaySummaryForm = () => {
             <div className="input-field col s12">
               <span>2. Service / Check Date</span>
               <br />
-              <input id="sub_1_13" name="sub_1_13" placeholder="Service or Check date" type="text"   {...register("sub_1_13")}/>
+              <input id="sub_1_13" name="sub_1_13" placeholder="Service or Check date" type="date"   {...register("sub_1_13")}/>
             </div>
 
 
@@ -501,7 +501,7 @@ const DaySummaryForm = () => {
             <div className="input-field col s12">
               <span>2. Date of Warranty Activation</span>
               <br />
-              <input id="sub_1_46" name="sub_1_46" placeholder="Date of Warranty Activation" type="text"  {...register("sub_1_46")}/>
+              <input id="sub_1_46" name="sub_1_46" placeholder="Date of Warranty Activation" type="date"  {...register("sub_1_46")}/>
             </div>
 
             <div className="input-field col s12">

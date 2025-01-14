@@ -72,6 +72,7 @@ const SurveyForm = () => {
         }
       }
     } catch (err) {
+      console.log(err);
       const MySwal = withReactContent(Swal);
       MySwal.fire({
         html: <i>{err.message}</i>,
